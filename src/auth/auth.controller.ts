@@ -2,6 +2,7 @@ import axios from "axios";
 import { Request, Response } from "express";
 import { logger } from "../services/logger.service.js";
 import { authService } from "./auth.service.js";
+import { User } from "../models/user.model.js";
 
 const AUTH_URL = ''
 
@@ -12,7 +13,7 @@ export async function login(req: Request, res: Response) {
         const user = await authService.login(email, password)
         const loginToken = authService.getLoginToken(user)
         logger.info('User login: ', user)
-        res.cookie('loginToken', loginToken, {sameSite: 'None', secure: true})
+        res.cookie('loginToken', loginToken, {sameSite: 'none', secure: true})
         res.json(user)
     } catch (err) {
         logger.error('Failed to Login ' + err)
@@ -22,12 +23,14 @@ export async function login(req: Request, res: Response) {
 
 export async function signup(req: Request, res: Response) {
     try {
-        const credentials = req.body
+        
+        const credentials : Omit<User, "_id"> = req.body
         // Never log passwords
         // logger.debug(credentials)
-        const account = await authService.signup(credentials)
-        logger.debug(`auth.route - new account created: ` + JSON.stringify(account))
-        const user = await authService.login(credentials.email, credentials.password)
+        const user = await authService.signup(credentials) // account
+        console.log("🚀 ~ signup ~ user:", user)
+        logger.debug(`auth.route - new account created: ` + JSON.stringify(user))
+        // const user = await authService.login(credentials.email, credentials.password)
         logger.info('User signup:', user)
         const loginToken = authService.getLoginToken(user)
         res.cookie('loginToken', loginToken, {sameSite: 'none', secure: true})

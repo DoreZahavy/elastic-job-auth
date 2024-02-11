@@ -29,7 +29,7 @@ import { setupAsyncLocalStorage } from './middlewares/setupAls.middleware.js';
 app.all('*', setupAsyncLocalStorage);
 import { authRoutes } from './auth/auth.routes.js';
 
-app.use('/api', authRoutes);
+app.use('/auth', authRoutes);
 
 // Make every server-side-route to match the index.html
 app.get('/**', (req, res) => {
@@ -37,7 +37,7 @@ app.get('/**', (req, res) => {
 });
 
 // Start the server
-const port: number = Number(process.env.PORT) || 3031;
+const port: number = Number(process.env.PORT) || 3032;
 server.listen(port, () => {
     console.log('Server is running on port: ' + port);
 });

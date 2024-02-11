@@ -1,3 +1,35 @@
 10.2.2024, 13:15:19 - INFO - Req was made | / 
 10.2.2024, 13:24:58 - INFO - Req was made | / 
 10.2.2024, 13:25:10 - INFO - Req was made | / 
+11.2.2024, 1:08:57 - DEBUG - auth.service - signup with email: smala@home.pl, fullname: Chrystel Hulse 
+11.2.2024, 1:08:57 - ERROR - Failed to signup Error: Error checking existing email 
+11.2.2024, 1:12:52 - DEBUG - auth.service - signup with email: smala@home.pl, fullname: Chrystel Hulse 
+11.2.2024, 1:12:52 - ERROR - Failed to signup Error: Error checking existing email 
+11.2.2024, 1:17:01 - DEBUG - auth.service - signup with email: smala@home.pl, fullname: Chrystel Hulse 
+11.2.2024, 1:17:01 - ERROR - Failed to signup Error: Error checking existing email 
+11.2.2024, 1:18:17 - DEBUG - auth.service - signup with email: chulse1@home.pl, fullname: Chrystel Hulse 
+11.2.2024, 1:18:17 - ERROR - Failed to signup Email already taken 
+11.2.2024, 1:18:25 - DEBUG - auth.service - signup with email: smala@home.pl, fullname: Chrystel Hulse 
+11.2.2024, 1:18:26 - ERROR - Failed to signup TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'ClientRequest'
+    |     property 'socket' -> object with constructor 'Socket'
+    --- property '_httpMessage' closes the circle 
+11.2.2024, 1:29:49 - DEBUG - auth.service - signup with email: smala@home.pl, fullname: Chrystel Hulse 
+11.2.2024, 1:29:49 - ERROR - Failed to signup Email already taken 
+11.2.2024, 1:31:59 - DEBUG - auth.service - signup with email: smala1@home.pl, fullname: Chrystel Hulse 
+11.2.2024, 1:32:00 - ERROR - Failed to signup TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'ClientRequest'
+    |     property 'socket' -> object with constructor 'Socket'
+    --- property '_httpMessage' closes the circle 
+11.2.2024, 1:34:35 - DEBUG - auth.service - signup with email: smala1@home.pl, fullname: Chrystel Hulse 
+11.2.2024, 1:34:35 - ERROR - Failed to signup Email already taken 
+11.2.2024, 1:36:48 - DEBUG - auth.service - login with email: smala1@home.pl 
+11.2.2024, 1:36:50 - INFO - User login:  | {"_id":"65c8076ff1f9743368a0a61f","email":"smala1@home.pl","userName":"chulse1","loc":{"lat":-10.2313205,"lon":-67.2847875},"skills":["global HCM","OA Framework","Appeals","Ownership"],"experience":[{"startTime":1528339948000,"endTime":1529457056656,"company":"Photolist","title":"Occupational Therapist"},{"startTime":1545040293000,"endTime":1611264302522,"company":"Skimia","title":"Web Designer I"}],"fullName":"Chrystel Hulse","gender":"Female","imgUrl":"xsgames.co/randomusers/avatar.php?g=female"} 
+11.2.2024, 1:40:14 - DEBUG - auth.service - signup with email: smala2@home.pl, fullname: Chrystel Hulse 
+11.2.2024, 1:40:15 - ERROR - Failed to signup TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'ClientRequest'
+    |     property 'socket' -> object with constructor 'Socket'
+    --- property '_httpMessage' closes the circle 
+11.2.2024, 1:47:25 - DEBUG - auth.service - signup with email: smala3@home.pl, fullname: Chrystel Hulse 
+11.2.2024, 1:47:26 - DEBUG - auth.route - new account created: {"email":"smala3@home.pl","password":"$2b$10$8kFeSfEeh6Cm8Q1SStBkGuSgMw4dcWgrDtsUiSPj/3uNkFBoeCvNm","userName":"chulse1","loc":{"lat":-10.2313205,"lon":-67.2847875},"skills":["global HCM","OA Framework","Appeals","Ownership"],"experience":[{"startTime":1528339948000,"endTime":1529457056656,"company":"Photolist","title":"Occupational Therapist"},{"startTime":1545040293000,"endTime":1611264302522,"company":"Skimia","title":"Web Designer I"}],"fullName":"Chrystel Hulse","gender":"Female","imgUrl":"xsgames.co/randomusers/avatar.php?g=female","_id":"65c80b0ef325a179452641f5"} 
+11.2.2024, 1:47:26 - INFO - User signup: | {"email":"smala3@home.pl","password":"$2b$10$8kFeSfEeh6Cm8Q1SStBkGuSgMw4dcWgrDtsUiSPj/3uNkFBoeCvNm","userName":"chulse1","loc":{"lat":-10.2313205,"lon":-67.2847875},"skills":["global HCM","OA Framework","Appeals","Ownership"],"experience":[{"startTime":1528339948000,"endTime":1529457056656,"company":"Photolist","title":"Occupational Therapist"},{"startTime":1545040293000,"endTime":1611264302522,"company":"Skimia","title":"Web Designer I"}],"fullName":"Chrystel Hulse","gender":"Female","imgUrl":"xsgames.co/randomusers/avatar.php?g=female","_id":"65c80b0ef325a179452641f5"} 
